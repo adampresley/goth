@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/markbates/goth/providers/bitly"
+	"github.com/adampresley/goth/providers/bitly"
 	"github.com/stretchr/testify/assert"
 )
 

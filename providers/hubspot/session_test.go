@@ -1,10 +1,10 @@
 package hubspot_test
 
 import (
-	"github.com/markbates/goth/providers/hubspot"
+	"github.com/adampresley/goth/providers/hubspot"
 	"testing"
 
-	"github.com/markbates/goth"
+	"github.com/adampresley/goth"
 	"github.com/stretchr/testify/assert"
 )
 

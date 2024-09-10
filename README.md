@@ -16,70 +16,71 @@ $ go get github.com/markbates/goth
 
 ## Supported Providers
 
-* Amazon
-* Apple
-* Auth0
-* Azure AD
-* Battle.net
-* Bitbucket
-* Box
-* ClassLink
-* Cloud Foundry
-* Dailymotion
-* Deezer
-* DigitalOcean
-* Discord
-* Dropbox
-* Eve Online
-* Facebook
-* Fitbit
-* Gitea
-* GitHub
-* Gitlab
-* Google
-* Google+ (deprecated)
-* Heroku
-* InfluxCloud
-* Instagram
-* Intercom
-* Kakao
-* Lastfm
-* LINE
-* Linkedin
-* Mailru
-* Meetup
-* MicrosoftOnline
-* Naver
-* Nextcloud
-* Okta
-* OneDrive
-* OpenID Connect (auto discovery)
-* Oura
-* Patreon
-* Paypal
-* Reddit
-* SalesForce
-* Shopify
-* Slack
-* Soundcloud
-* Spotify
-* Steam
-* Strava
-* Stripe
-* TikTok
-* Tumblr
-* Twitch
-* Twitter
-* Typetalk
-* Uber
-* VK
-* WeCom
-* Wepay
-* Xero
-* Yahoo
-* Yammer
-* Yandex
-* Zoom
+- Amazon
+- Apple
+- Auth0
+- Azure AD
+- Battle.net
+- Bitbucket
+- Box
+- ClassLink
+- Cloud Foundry
+- Dailymotion
+- Deezer
+- DigitalOcean
+- Discord
+- Dropbox
+- Eve Online
+- Facebook
+- Fitbit
+- Gitea
+- GitHub
+- Gitlab
+- Google
+- Google+ (deprecated)
+- Heroku
+- InfluxCloud
+- Instagram
+- Intercom
+- Kakao
+- Lastfm
+- LINE
+- Linkedin
+- Mailru
+- Meetup
+- MicrosoftOnline
+- Naver
+- Nextcloud
+- Okta
+- OneDrive
+- OpenID Connect (auto discovery)
+- Oura
+- Patreon
+- Password Grant (direct)
+- Paypal
+- Reddit
+- SalesForce
+- Shopify
+- Slack
+- Soundcloud
+- Spotify
+- Steam
+- Strava
+- Stripe
+- TikTok
+- Tumblr
+- Twitch
+- Twitter
+- Typetalk
+- Uber
+- VK
+- WeCom
+- Wepay
+- Xero
+- Yahoo
+- Yammer
+- Yandex
+- Zoom
 
 ## Examples
 
@@ -91,10 +92,13 @@ To run the example either clone the source from GitHub
 ```text
 $ git clone git@github.com:markbates/goth.git
 ```
+
 or use
+
 ```text
 $ go get github.com/markbates/goth
 ```
+
 ```text
 $ cd goth/examples
 $ go get -v
@@ -156,3 +160,10 @@ Would I love to see more providers? Certainly! Would you love to contribute one?
 5. Commit your changes (git commit -am 'Add some feature')
 6. Push to the branch (git push origin my-new-feature)
 7. Create new Pull Request
+
+## Adam's Changes
+
+### 2024-09-09
+
+- Added locks around providers map operations (https://github.com/markbates/goth/pull/521)
+- Added "direct" password flow (https://github.com/markbates/goth/pull/506)

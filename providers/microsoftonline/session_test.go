@@ -3,8 +3,8 @@ package microsoftonline_test
 import (
 	"testing"
 
-	"github.com/markbates/goth"
-	"github.com/markbates/goth/providers/microsoftonline"
+	"github.com/adampresley/goth"
+	"github.com/adampresley/goth/providers/microsoftonline"
 	"github.com/stretchr/testify/assert"
 )
 

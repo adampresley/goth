@@ -3,8 +3,8 @@ package oura_test
 import (
 	"testing"
 
-	"github.com/markbates/goth"
-	"github.com/markbates/goth/providers/oura"
+	"github.com/adampresley/goth"
+	"github.com/adampresley/goth/providers/oura"
 	"github.com/stretchr/testify/assert"
 )
 
