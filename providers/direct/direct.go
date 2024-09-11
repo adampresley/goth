@@ -56,7 +56,7 @@ func (p *Provider) FetchUser(session goth.Session) (goth.User, error) {
 
 	if directSession.Email == "" {
 		// data is not yet retrieved since email is still empty
-		return goth.User{}, fmt.Errorf("%s cannot get user information without accessToken", p.name)
+		return goth.User{}, fmt.Errorf("%s cannot get user information without email", p.name)
 	}
 
 	user, err := p.UserFetcher(directSession.Email)
