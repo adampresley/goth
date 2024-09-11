@@ -3,8 +3,8 @@ package goth_test
 import (
 	"testing"
 
-	"github.com/markbates/goth"
-	"github.com/markbates/goth/providers/faux"
+	"github.com/adampresley/goth"
+	"github.com/adampresley/goth/providers/faux"
 	"github.com/stretchr/testify/assert"
 )
 

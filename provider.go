@@ -54,7 +54,7 @@ func GetProviders() Providers {
 func GetProvider(name string) (Provider, error) {
 	locker.RLock()
 	provider := providers[name]
-	locker.Unlock()
+	locker.RUnlock()
 
 	if provider == nil {
 		return nil, fmt.Errorf("no provider for %s exists", name)
