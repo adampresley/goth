@@ -60,11 +60,7 @@ func (p *Provider) FetchUser(session goth.Session) (goth.User, error) {
 	}
 
 	user, err := p.UserFetcher(directSession.Email)
-	if err != nil {
-		return goth.User{}, err
-	}
-
-	return user, nil
+	return user, err
 }
 
 func (p *Provider) Debug(debug bool) {
